@@ -1,0 +1,9 @@
+[Unit]
+Description=Mount the encrypted Backup OneDrive as a local drive
+
+[Service]
+ExecStart=rclone mount -v --vfs-cache-mode writes backup: '%h/OneDrive Encrypted'
+ExecStop=fusermount -uz '%h/OneDrive Encrypted'
+
+[Install]
+WantedBy=default.target

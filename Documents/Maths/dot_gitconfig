@@ -1,0 +1,8 @@
+[user]
+	name = Karl Welzel
+	email = karl.welzel@maths.ox.ac.uk
+	signingkey = 3784DE1A77B4324E
+
+[core]
+	sshCommand = ssh -i ~/.ssh/id_ed25519_maths -o IdentitiesOnly=yes
+

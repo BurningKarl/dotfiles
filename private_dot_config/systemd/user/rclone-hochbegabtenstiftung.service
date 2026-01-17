@@ -1,0 +1,9 @@
+[Unit]
+Description=Mount the Hochbegabtenstiftung OneDrive as a local drive
+
+[Service]
+ExecStart=rclone mount --vfs-cache-mode writes hochbegabtenstiftung: '%h/OneDrive Hochbegabtenstiftung'
+ExecStop=fusermount -uz '%h/OneDrive Hochbegabtenstiftung'
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+[user]
+	name = BurningKarl
+	email = 10158964+BurningKarl@users.noreply.github.com
+	signingkey = FE1888A3FFBC4A43
+[includeIf "gitdir:~/Documents/Maths/"]
+	path = ~/Documents/Maths/.gitconfig
+
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[diff]
+	submodule = log
+[protocol "file"]
+	allow = always
+[credential]
+	helper = store

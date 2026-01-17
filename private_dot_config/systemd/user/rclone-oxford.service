@@ -1,0 +1,9 @@
+[Unit]
+Description=Mount the Oxford OneDrive as a local drive
+
+[Service]
+ExecStart=rclone mount --vfs-cache-mode full oxford: '%h/OneDrive Oxford'
+ExecStop=fusermount -uz '%h/OneDrive Oxford'
+
+[Install]
+WantedBy=default.target

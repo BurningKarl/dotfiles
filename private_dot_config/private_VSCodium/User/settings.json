@@ -1,0 +1,13 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "chat.disableAIFeatures": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "ruff.lint.extendSelect": [
+        "E",
+        "F",
+        "SIM",
+        "B",
+        "I"
+    ]
+}
