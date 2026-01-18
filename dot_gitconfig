@@ -15,3 +15,5 @@
 	allow = always
 [credential]
 	helper = store
+[push]
+	autoSetupRemote = true
